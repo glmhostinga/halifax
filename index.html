@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,8 +52,8 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
 <meta name="twitter:description" content="Halifax's new indoor Christmas market at Pavilion 22, Halifax Waterfront. Up to 140 curated Nova Scotia vendors, timed entry from $7, kids always free.">
 <meta name="twitter:image" content="https://hfxchristmasmarket.ca/IMAGES/HFXCHRISTMASMARKET-SOCIAL.jpg">
 
-<link rel="icon" type="image/png" href="/IMAGES/HFXCHRISTMASMARKET-LOGO.png">
-<link rel="icon" type="image/png" href="/IMAGES/HFXCHRISTMASMARKET-LOGO.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -299,7 +300,7 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
   .zone-stairs { position: absolute; bottom: 80px; left: 385px; width: 35px; height: 100px; border: 1px solid rgba(0,0,0,0.2); background: repeating-linear-gradient(0deg, transparent, transparent 5px, rgba(0,0,0,0.1) 5px, rgba(0,0,0,0.1) 6px); }
   
   /* Lounge nudged leftwards */
-  .zone-lounge { position: absolute; bottom: 15px; left: 35px; width: 80px; height: 130px; background: var(--gold); display: flex; align-items: center; justify-content: center; color: var(--charcoal); font-size: 1.2rem; font-family: 'Playfair Display', serif; font-weight: 700; text-transform: uppercase; writing-mode: vertical-rl; transform: rotate(180deg); letter-spacing: 0.15em; border-radius: 2px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 5; }
+  .zone-lounge { position: absolute; bottom: 15px; left: 35px; width: 80px; height: 130px; background: #C97B84; display: flex; align-items: center; justify-content: center; color: var(--cream); font-size: 1.2rem; font-family: 'Playfair Display', serif; font-weight: 700; text-transform: uppercase; writing-mode: vertical-rl; transform: rotate(180deg); letter-spacing: 0.15em; border-radius: 2px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 5; }
   
   /* Entrance shifted left beside Lounge (clean gap) */
   .zone-enter { position: absolute; bottom: 15px; left: 125px; background: var(--mid-green); color: var(--cream); padding: 6px 14px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; border-radius: 2px; z-index: 5; }
@@ -463,7 +464,12 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
   .fv-footnote { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid #2a2a2a; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
   .fv-footnote p { font-size: 0.85rem; color: rgba(250,246,240,0.5); line-height: 1.7; max-width: 480px; }
   .fv-footnote strong { color: var(--cream); font-weight: 500; }
-  .vd-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1px; margin-top: 2.5rem; background: #2a2a2a; }
+  .vd-filters { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1.75rem; }
+  .vd-filter { background: transparent; border: 1px solid rgba(250,246,240,0.2); color: rgba(250,246,240,0.65); font-size: 0.78rem; letter-spacing: 0.03em; padding: 0.45rem 1rem; border-radius: 100px; cursor: pointer; transition: all 0.2s ease; font-family: 'DM Sans', sans-serif; }
+  .vd-filter:hover { border-color: var(--gold); color: var(--gold-light); }
+  .vd-filter.active { background: var(--gold); border-color: var(--gold); color: var(--charcoal); font-weight: 600; }
+  .vd-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1px; margin-top: 1.75rem; background: #2a2a2a; }
+  .vd-card.vd-hidden { display: none; }
   .vd-card { background: #1a1a1a; padding: 1.5rem 1.5rem 1.35rem; transition: background 0.25s ease; }
   .vd-card:hover { background: #222; }
   .vd-booth { display: inline-block; font-size: 0.68rem; letter-spacing: 0.08em; color: var(--charcoal); background: var(--gold); font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 2px; margin-bottom: 0.75rem; }
@@ -676,7 +682,7 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
         <div class="legend-item"><div class="legend-box" style="background:var(--mid-green);"></div> 8&times;8 Booth ($675) &middot; #59&ndash;87, 91&ndash;140</div>
         <div class="legend-item"><div class="legend-box" style="background:#cfcfcf;"></div> Under Review</div>
         <div class="legend-item"><div class="legend-box" style="background:var(--gold);"></div> Accepted</div>
-        <div class="legend-item"><div class="legend-box" style="background:var(--gold);"></div> Lounge</div>
+        <div class="legend-item"><div class="legend-box" style="background:#C97B84;"></div> Lounge</div>
         <div class="legend-item"><div class="legend-box" style="border:2px solid var(--red);"></div> Washrooms &amp; Office</div>
         <div class="legend-item"><div class="legend-box" style="background:#b0b0b0;"></div> Structural Walls</div>
     </div>
@@ -728,7 +734,7 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
 
             <!-- Top Wall Booths (26) -->
             <div class="b-row" style="top: 15px; left: 190px;">
-                <div class="bth accepted">1</div><div class="bth review">2</div><div class="bth">3</div><div class="bth">4</div><div class="bth review">5</div><div class="bth review">6</div><div class="bth review">7</div><div class="bth review">8</div><div class="bth">9</div><div class="bth">10</div><div class="bth">11</div><div class="bth">12</div><div class="bth accepted">13</div><div class="bth review">14</div><div class="bth">15</div><div class="bth">16</div><div class="bth">17</div><div class="bth">18</div><div class="bth">19</div><div class="bth review">20</div><div class="bth">21</div><div class="bth review">22</div><div class="bth">23</div><div class="bth">24</div><div class="bth">25</div><div class="bth accepted">26</div>
+                <div class="bth accepted">1</div><div class="bth review">2</div><div class="bth">3</div><div class="bth">4</div><div class="bth review">5</div><div class="bth review">6</div><div class="bth review">7</div><div class="bth">8</div><div class="bth">9</div><div class="bth">10</div><div class="bth">11</div><div class="bth">12</div><div class="bth accepted">13</div><div class="bth review">14</div><div class="bth">15</div><div class="bth">16</div><div class="bth">17</div><div class="bth">18</div><div class="bth">19</div><div class="bth accepted">20</div><div class="bth">21</div><div class="bth review">22</div><div class="bth">23</div><div class="bth">24</div><div class="bth">25</div><div class="bth accepted">26</div>
             </div>
             
             <!-- Top Left Vertical (2) -->
@@ -738,7 +744,7 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
 
             <!-- Below Office Horizontal (4) -->
             <div class="b-row" style="top: 105px; left: 55px;">
-                <div class="bth review">29</div><div class="bth">30</div><div class="bth review">31</div><div class="bth review">32</div>
+                <div class="bth">29</div><div class="bth review">30</div><div class="bth">31</div><div class="bth">32</div>
             </div>
 
             <!-- Far Left Vertical (2) -->
@@ -748,7 +754,7 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
 
             <!-- Main Upper Island Top Side (24) -->
             <div class="b-row" style="top: 90px; left: 215px;">
-                <div class="bth accepted">35</div><div class="bth">36</div><div class="bth">37</div><div class="bth">38</div><div class="bth">39</div><div class="bth">40</div><div class="bth">41</div><div class="bth">42</div><div class="bth">43</div><div class="bth">44</div><div class="bth">45</div><div class="bth accepted">46</div><div class="bth review">47</div><div class="bth">48</div><div class="bth">49</div><div class="bth">50</div><div class="bth">51</div><div class="bth">52</div><div class="bth">53</div><div class="bth">54</div><div class="bth">55</div><div class="bth">56</div><div class="bth">57</div><div class="bth review">58</div>
+                <div class="bth accepted">35</div><div class="bth">36</div><div class="bth">37</div><div class="bth">38</div><div class="bth">39</div><div class="bth">40</div><div class="bth">41</div><div class="bth">42</div><div class="bth">43</div><div class="bth">44</div><div class="bth">45</div><div class="bth accepted">46</div><div class="bth review">47</div><div class="bth">48</div><div class="bth">49</div><div class="bth">50</div><div class="bth">51</div><div class="bth review">52</div><div class="bth">53</div><div class="bth">54</div><div class="bth">55</div><div class="bth">56</div><div class="bth">57</div><div class="bth accepted">58</div>
             </div>
             
             <!-- Main Upper Island Bottom Side (24) -->
@@ -758,7 +764,7 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
 
             <!-- Washrooms Top (5) -->
             <div class="b-row" style="bottom: 195px; left: 300px;">
-                <div class="bth review">83</div><div class="bth review">84</div><div class="bth review">85</div><div class="bth review">86</div><div class="bth review">87</div>
+                <div class="bth review">83</div><div class="bth review">84</div><div class="bth">85</div><div class="bth review">86</div><div class="bth review">87</div>
             </div>
 
             <!-- Washrooms Left (3) -->
@@ -773,7 +779,7 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
 
             <!-- Right Mid Island Top (11) - Shifted Down -->
             <div class="b-row" style="top: 263px; left: 515px;">
-                <div class="bth review">94</div><div class="bth review">95</div><div class="bth">96</div><div class="bth">97</div><div class="bth">98</div><div class="bth">99</div><div class="bth review">100</div><div class="bth">101</div><div class="bth review">102</div><div class="bth">103</div><div class="bth review">104</div>
+                <div class="bth review">94</div><div class="bth accepted">95</div><div class="bth">96</div><div class="bth">97</div><div class="bth">98</div><div class="bth">99</div><div class="bth review">100</div><div class="bth">101</div><div class="bth review">102</div><div class="bth">103</div><div class="bth review">104</div>
             </div>
             
             <!-- Right Mid Island Bottom (11) - Shifted Down -->
@@ -835,7 +841,7 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
     <h2 class="section-title">Be part of Halifax's<br>newest Christmas show.</h2>
     <div class="vendors-intro">
       <div>
-        <p style="font-size:0.88rem;line-height:1.9;color:rgba(250,246,240,0.6);margin-bottom:2rem">We're keeping this intentionally small: up to 140 hand-selected spots, minimal category overlap. If you're in, you're the only one doing what you do in the room. If you make it, grow it, bake it, or craft it in Nova Scotia, we want to hear from you.</p>
+        <p style="font-size:0.88rem;line-height:1.9;color:rgba(250,246,240,0.6);margin-bottom:2rem">We're keeping this intentionally small: up to 140 hand-selected spots, minimal category overlap. If you make it, grow it, bake it, or craft it in Nova Scotia, we want to hear from you.</p>
         <div class="section-label" style="margin-bottom:1rem">Categories we're looking for</div>
         <div class="vendor-cats">
           <div class="vcat"><span class="vcat-dot"></span>Bakery &amp; Sweets</div>
@@ -870,44 +876,34 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
           <div class="price-tag"><div class="sz">8 x 8 Booth</div><div class="pr">$675</div></div>
         </div>
         <div class="deposit-note">
-          <p>Once accepted, we only ask for a <strong>fully refundable $150 hold</strong> to confirm your spot, applied in full toward your booth fee. The rest isn't due until <strong>October 1, 2026</strong>.</p>
+          <p>Once accepted, we only ask for a <strong>fully refundable $150 hold</strong> to confirm your spot, applied in full toward your booth fee.</p>
         </div>
         <div class="security-note">
-          <p>
-            &#128274; <strong>Payment security:</strong>
-            only send vendor payments following instructions received from
-            <a href="mailto:hfxchristmasmarket.ca@vibrantcityshows.com">hfxchristmasmarket.ca@vibrantcityshows.com</a>.
-            When in doubt, contact us before sending payment.
-          </p>
-</div>
-        <div class="vendor-apply" id="vendor-form">
-  <h3>Apply as a Vendor</h3>
+          <p>&#128274; <strong>Payment security:</strong> only send vendor payments following instructions received from <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bad3d4dcd5fad2dcc2d9d2c8d3c9ced7dbc9d7dbc8d1dfce94d9db">[email&#160;protected]</a> or <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="aec6c8d6cdc6dcc7dddac3cfddc3cfdcc5cbdaeec9c3cfc7c280cdc1c3">[email&#160;protected]</a>. When in doubt, contact us before sending payment.</p>
+        </div>
+        <div id="vendor-form">
 
-  <p>
-    Interested in joining the Halifax Christmas Market?
-    Complete the vendor application below and our team will review your submission.
-  </p>
-
-  <div id="jotform-vendor-form">
-    <iframe
-      id="JotFormIFrame-262662961357062"
-      title="Halifax Christmas Market Vendor Application"
-      allowtransparency="true"
-      allow="geolocation; microphone; camera; fullscreen; payment"
-      src="https://form.jotform.com/262662961357062"
-      frameborder="0"
-      scrolling="no">
-    </iframe>
-  </div>
+  <iframe
+    id="JotFormIFrame-262643431866058"
+    title="Halifax Christmas Market - Vendor Application"
+    onload="window.parent.scrollTo(0,0)"
+    allowtransparency="true"
+    allow="geolocation; microphone; camera; fullscreen; payment"
+    src="https://form.jotform.com/262643431866058"
+    frameborder="0"
+    style="min-width:100%;max-width:100%;height:900px;border:none;"
+    scrolling="no">
+  </iframe>
 
   <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
 
   <script>
     window.jotformEmbedHandler(
-      "iframe[id='JotFormIFrame-262662961357062']",
+      "iframe[id='JotFormIFrame-262643431866058']",
       "https://form.jotform.com/"
     );
   </script>
+
 </div>
         <div class="form-success" id="form-success">
           <p>Application received!</p>
@@ -932,11 +928,11 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
     <div class="sponsor-spots-label">5 Founding Sponsor Spots</div>
     <p class="sponsor-spots-note">We're keeping our first year small: just 5 founding sponsor spots across all tiers. First come, first served. Once they're gone, they're gone until 2027.</p>
     <div class="sponsor-spots">
-      <a href="/cdn-cgi/l/email-protection#e48d8a828ba48c829c878c968d97908985978985968f8190ca8785db9791868e818790d9b7948b8a978b96978c8d94c1d6d4ad8a95918d969dc1d6d4c9c1d6d4ac85888d82859cc1d6d4a78c968d9790898597c1d6d4a985968f8190" class="sponsor-spot"><span class="plus">+</span>Spot Available</a>
-      <a href="/cdn-cgi/l/email-protection#8fe6e1e9e0cfe7e9f7ece7fde6fcfbe2eefce2eefde4eafba1eceeb0fcfaede5eaecfbb2dcffe0e1fce0fdfce7e6ffaabdbfc6e1fefae6fdf6aabdbfa2aabdbfc7eee3e6e9eef7aabdbfcce7fde6fcfbe2eefcaabdbfc2eefde4eafb" class="sponsor-spot"><span class="plus">+</span>Spot Available</a>
-      <a href="/cdn-cgi/l/email-protection#c0a9aea6af80a8a6b8a3a8b2a9b3b4ada1b3ada1b2aba5b4eea3a1ffb3b5a2aaa5a3b4fd93b0afaeb3afb2b3a8a9b0e5f2f089aeb1b5a9b2b9e5f2f0ede5f2f088a1aca9a6a1b8e5f2f083a8b2a9b3b4ada1b3e5f2f08da1b2aba5b4" class="sponsor-spot"><span class="plus">+</span>Spot Available</a>
-      <a href="/cdn-cgi/l/email-protection#86efe8e0e9c6eee0fee5eef4eff5f2ebe7f5ebe7f4ede3f2a8e5e7b9f5f3e4ece3e5f2bbd5f6e9e8f5e9f4f5eeeff6a3b4b6cfe8f7f3eff4ffa3b4b6aba3b4b6cee7eaefe0e7fea3b4b6c5eef4eff5f2ebe7f5a3b4b6cbe7f4ede3f2" class="sponsor-spot"><span class="plus">+</span>Spot Available</a>
-      <a href="/cdn-cgi/l/email-protection#93fafdf5fcd3fbf5ebf0fbe1fae0e7fef2e0fef2e1f8f6e7bdf0f2ace0e6f1f9f6f0e7aec0e3fcfde0fce1e0fbfae3b6a1a3dafde2e6fae1eab6a1a3beb6a1a3dbf2fffaf5f2ebb6a1a3d0fbe1fae0e7fef2e0b6a1a3def2e1f8f6e7" class="sponsor-spot"><span class="plus">+</span>Spot Available</a>
+      <a href="/cdn-cgi/l/email-protection#e68f888089a68e809e858e948f95928b87958b87948d8392c88587d99593848c838592dbb5968988958994958e8f96c3d4d6af8897938f949fc3d4d6cbc3d4d6ae878a8f80879ec3d4d6a58e948f95928b8795c3d4d6ab87948d8392" class="sponsor-spot"><span class="plus">+</span>Spot Available</a>
+      <a href="/cdn-cgi/l/email-protection#2e474048416e4648564d465c475d5a434f5d434f5c454b5a004d4f115d5b4c444b4d5a137d5e41405d415c5d46475e0b1c1e67405f5b475c570b1c1e030b1c1e664f4247484f560b1c1e6d465c475d5a434f5d0b1c1e634f5c454b5a" class="sponsor-spot"><span class="plus">+</span>Spot Available</a>
+      <a href="/cdn-cgi/l/email-protection#3851565e5778505e405b504a514b4c55594b55594a535d4c165b59074b4d5a525d5b4c056b4857564b574a4b5051481d0a087156494d514a411d0a08151d0a08705954515e59401d0a087b504a514b4c55594b1d0a0875594a535d4c" class="sponsor-spot"><span class="plus">+</span>Spot Available</a>
+      <a href="/cdn-cgi/l/email-protection#b3daddd5dcf3dbd5cbd0dbc1dac0c7ded2c0ded2c1d8d6c79dd0d28cc0c6d1d9d6d0c78ee0c3dcddc0dcc1c0dbdac3968183faddc2c6dac1ca9681839e968183fbd2dfdad5d2cb968183f0dbc1dac0c7ded2c0968183fed2c1d8d6c7" class="sponsor-spot"><span class="plus">+</span>Spot Available</a>
+      <a href="/cdn-cgi/l/email-protection#92fbfcf4fdd2faf4eaf1fae0fbe1e6fff3e1fff3e0f9f7e6bcf1f3ade1e7f0f8f7f1e6afc1e2fdfce1fde0e1fafbe2b7a0a2dbfce3e7fbe0ebb7a0a2bfb7a0a2daf3fefbf4f3eab7a0a2d1fae0fbe1e6fff3e1b7a0a2dff3e0f9f7e6" class="sponsor-spot"><span class="plus">+</span>Spot Available</a>
     </div>
     <div class="sponsor-tiers">
       <div class="sponsor-tier">
@@ -978,23 +974,26 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
         <small>We'll be in touch within a few business days.</small>
       </div>
       <div id="sponsor-form-fields">
-  
-    <iframe
-      id="JotFormIFrame-262663715006051"
-      title="Inquire About Sponsorship"
-      onload="window.parent.scrollTo(0,0)"
-      allowtransparency="true"
-      allow="geolocation; microphone; camera; fullscreen; payment"
-      src="https://form.jotform.com/262663715006051"
-      frameborder="0"
-      style="min-width:100%;max-width:100%;height:539px;border:none;"
-      scrolling="no"
-    >
-    </iframe>
-    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-262663715006051']", "https://form.jotform.com/")</script>
-    
-</div>
+        <div class="form-row">
+          <div class="form-group"><input type="text" placeholder="Company / brand name" id="sponsor-company"></div>
+          <div class="form-group"><input type="text" placeholder="First & Last Name" id="sponsor-name"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><input type="email" placeholder="Email address" id="sponsor-email"></div>
+          <div class="form-group"><input type="tel" placeholder="Phone number" id="sponsor-phone"></div>
+        </div>
+        <div class="form-group">
+          <select id="sponsor-tier">
+            <option value="" disabled selected>Which tier interests you?</option>
+            <option>Community Sponsor</option>
+            <option>Gold Sponsor</option>
+            <option>Presenting Sponsor</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-group"><textarea placeholder="Tell us about your brand and what matters most to you..." id="sponsor-message"></textarea></div>
+        <button class="btn-submit" onclick="submitSponsorForm()">Submit Inquiry</button>
+      </div>
     </div>
   </div>
 </section>
@@ -1012,7 +1011,7 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I bring my kids?</div><div class="faq-a"><div class="faq-a-inner">Of course! Children are always free. We're also hoping to bring in a Meet Santa experience this year, so keep an eye on our socials closer to the date.</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is there food and drink at the event?</div><div class="faq-a"><div class="faq-a-inner">Yes. We have an on-site lounge with warm drinks, hot chocolate, and a place to sit and rest.</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Where do you recommend staying if I'm coming from out of town?</div><div class="faq-a"><div class="faq-a-inner">We recommend the Westin Nova Scotia, just steps from Pavilion 22 and a great home base for the weekend. It's right on the Halifax waterfront, close to good restaurants and the boardwalk.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="046d6a626b446c627c676c766d77706965776965766f61702a6765">[email&#160;protected]</a> the same as <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b5ddd3cdd6ddc7dcc6c1d8d4c6d8d4c7ded0c1f5d2d8d4dcd99bd6dad8">[email&#160;protected]</a>?</div><div class="faq-a"><div class="faq-a-inner">Yes. Both addresses reach the same inbox and the same team, so use whichever is easiest for you. You'll always hear back from us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="137a7d757c537b756b707b617a60677e72607e72617876673d7072">[email&#160;protected]</a>.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6e070008012e0608160d061c071d1a030f1d030f1c050b1a400d0f">[email&#160;protected]</a> the same as <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="98f0fee0fbf0eaf1ebecf5f9ebf5f9eaf3fdecd8fff5f9f1f4b6fbf7f5">[email&#160;protected]</a>?</div><div class="faq-a"><div class="faq-a-inner">Yes. Both addresses reach the same inbox and the same team, so use whichever is easiest for you. You'll always hear back from us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bcd5d2dad3fcd4dac4dfd4ced5cfc8d1ddcfd1ddced7d9c892dfdd">[email&#160;protected]</a>.</div></div></div>
     </div>
   </div>
 </section>
@@ -1029,8 +1028,8 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
       </div>
       <div class="contact-item">
         <div class="contact-label">Email</div>
-        <div class="contact-value"><a href="/cdn-cgi/l/email-protection#573e393138173f312f343f253e24233a36243a36253c3223793436"><span class="__cf_email__" data-cfemail="7f161119103f1719071c170d160c0b121e0c121e0d141a0b511c1e">[email&#160;protected]</span></a></div>
-        <div class="contact-note">Also reachable at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="86eee0fee5eef4eff5f2ebe7f5ebe7f4ede3f2c6e1ebe7efeaa8e5e9eb">[email&#160;protected]</a> &mdash; same inbox, same team, either works.</div>
+        <div class="contact-value"><a href="/cdn-cgi/l/email-protection#afc6c1c9c0efc7c9d7ccc7ddc6dcdbc2cedcc2ceddc4cadb81ccce"><span class="__cf_email__" data-cfemail="026b6c646d426a647a616a706b71766f63716f63706967762c6163">[email&#160;protected]</span></a></div>
+        <div class="contact-note">Also reachable at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="402826382328322933342d21332d21322b253400272d21292c6e232f2d">[email&#160;protected]</a> &mdash; same inbox, same team, either works.</div>
       </div>
       <div class="contact-item">
         <div class="contact-label">Location</div>
@@ -1295,6 +1294,13 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
       facebook: "",
       website: ""
     },
+    20: {
+      name: "MCKN Candle Co.",
+      category: "Candles & Scents",
+      instagram: "",
+      facebook: "",
+      website: "https://www.mckncandleco.com"
+    },
     26: {
       name: "Tiny Owlery",
       category: "Home & Decor",
@@ -1343,16 +1349,31 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
       instagram: "",
       facebook: "",
       website: ""
+    },
+    58: {
+      name: "Fort Publishing",
+      category: "Toys, Books & Hobbies",
+      instagram: "",
+      facebook: "https://www.facebook.com/profile.php?id=61577589213246",
+      website: ""
+    },
+    95: {
+      name: "The Jibbitz Shop at Shore Things",
+      category: "Toys, Books & Hobbies",
+      instagram: "shorethingscharmshop",
+      facebook: "",
+      website: ""
     }
   };
   const igIcon = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="vertical-align:-1.5px;margin-right:4px"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1"/></svg>';
   const fbIcon = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="vertical-align:-1.5px;margin-right:4px"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M14 8h-1.5C11.1 8 10 9.1 10 10.5V12H8v3h2v5h3v-5h2.2l.5-3H13v-1.2c0-.5.3-.8.8-.8H15V8Z" stroke-linejoin="round"/></svg>';
 
   // Build the "Confirmed vendors" directory directly from vendorData.
-  // #vd-count-badge and #vd-grid were removed from the vendor-directory section in
-  // index.html so the section shows nothing but its intro paragraph for now. This
-  // block safely no-ops (vdGrid is null) until both containers are added back and
-  // SHOW_VENDOR_DIRECTORY is flipped to true, once there's a fuller lineup to show.
+  // #vd-count-badge, #vd-filters and #vd-grid were removed from the vendor-directory
+  // section in index.html so the section shows nothing but its intro paragraph for
+  // now. This block safely no-ops (vdGrid is null) until all three containers are
+  // added back and SHOW_VENDOR_DIRECTORY is flipped to true, once there's a fuller
+  // lineup to show. Category filter chips (in #vd-filters) are ready to go too.
   const SHOW_VENDOR_DIRECTORY = false;
   const vdGrid = document.getElementById('vd-grid');
   if (vdGrid) {
@@ -1368,10 +1389,10 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
         const v = vendorData[num];
         const links = [];
         if (v.instagram) links.push('<a href="https://www.instagram.com/' + v.instagram + '/" target="_blank" rel="noopener">' + igIcon + '@' + v.instagram + '</a>');
-        if (v.facebook) links.push('<a href="https://www.facebook.com/' + v.facebook + '/" target="_blank" rel="noopener">' + fbIcon + 'Facebook</a>');
+        if (v.facebook) links.push('<a href="' + (/^https?:\/\//.test(v.facebook) ? v.facebook : 'https://www.facebook.com/' + v.facebook + '/') + '" target="_blank" rel="noopener">' + fbIcon + 'Facebook</a>');
         if (v.website) links.push('<a href="' + v.website + '" target="_blank" rel="noopener">' + v.website.replace(/^https?:\/\//, '') + '</a>');
         return `
-          <div class="vd-card">
+          <div class="vd-card" data-category="${v.category}">
             <div class="vd-booth">Booth #${num}</div>
             <h3>${v.name}</h3>
             <div class="vd-cat">${v.category}</div>
@@ -1379,6 +1400,31 @@ src="https://www.facebook.com/tr?id=1743894850181910&ev=PageView&noscript=1"
           </div>
         `;
       }).join('');
+
+      // Category filter chips — "All" plus one per unique category, in order of first appearance.
+      const vdFilters = document.getElementById('vd-filters');
+      if (vdFilters) {
+        const categories = [];
+        boothNums.forEach(function(num) {
+          const cat = vendorData[num].category;
+          if (categories.indexOf(cat) === -1) categories.push(cat);
+        });
+        const allChips = ['All'].concat(categories);
+        vdFilters.innerHTML = allChips.map(function(cat, i) {
+          return '<button type="button" class="vd-filter' + (i === 0 ? ' active' : '') + '" data-filter="' + cat + '">' + cat + '</button>';
+        }).join('');
+        vdFilters.querySelectorAll('.vd-filter').forEach(function(chip) {
+          chip.addEventListener('click', function() {
+            vdFilters.querySelectorAll('.vd-filter').forEach(function(c) { c.classList.remove('active'); });
+            chip.classList.add('active');
+            const filter = chip.getAttribute('data-filter');
+            vdGrid.querySelectorAll('.vd-card').forEach(function(card) {
+              const match = filter === 'All' || card.getAttribute('data-category') === filter;
+              card.classList.toggle('vd-hidden', !match);
+            });
+          });
+        });
+      }
     }
   }
 
